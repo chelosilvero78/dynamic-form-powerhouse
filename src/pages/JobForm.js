@@ -75,7 +75,7 @@ function validate(watchValues, errorMethods) {
     // if(watchValues['firstname'] === 'Admin'){
     if(watchValues['firstname']?.match(regex)){
         if(!errors['firstname']){
-            console.log("entra-error->", errors)
+            console.log("entra-->", errors)
             setError('firstname', {
                 type: 'manual',
                 message: 'You cannot use this first name',
